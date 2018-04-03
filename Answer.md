@@ -1,4 +1,12 @@
-The task is done in R from the file Rjsonio.R
+The task is done in R from the file Rjsonio.R for the full version.
+
+First, download the JSON dataset:
+```
+library(RJSONIO)
+
+gnomeraw<-fromJSON("https://dcc.icgc.org/api/v1/projects/GBM-US/mutations?field=id,mutation,type,chromosome,start,end&size=100&order=desc")
+gnome<-gnomeraw[['hits']]
+```
 
 ## Visualization 1: Type of Mutation Type
 
