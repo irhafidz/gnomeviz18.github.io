@@ -48,9 +48,11 @@ gchromosome <- ggplot(gnomeDF, aes(chromosome))
 g + geom_bar(aes(fill=chromosome))
 ```
 
-![alt text][logo]
+![alt text][chrom]
 
-[logo]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "The of Chromosome"
+[chrom]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "Distribution of Mutation accross the Type of Chromosome"
+
+
 
 
 ```
