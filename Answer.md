@@ -38,3 +38,44 @@ g + geom_bar(aes(fill=mutation_type))
 
 
 ## Visualization 2: Distribution of Mutation accross the Type of Chromosome
+
+Creating 2nd visualization using ggplot2
+```
+# creating visualizations
+library(plotly)
+library(ggplot2)
+gchromosome <- ggplot(gnomeDF, aes(chromosome))
+g + geom_bar(aes(fill=chromosome))
+```
+
+![alt text][logo]
+
+[logo]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "The Type of Mutation across Type of Chromosome"
+
+```
+
+```
+> chromosomecount <- count(gnomeDF$chromosome)
+> chromosomecount
+    x freq
+1   1   10
+2  10    8
+3  12    2
+4  13    3
+5  15    7
+6  16    5
+7  17   13
+8  18    2
+9  19    8
+10  2    8
+11 20    2
+12 21    1
+13 22    1
+14  3    5
+15  4    2
+16  5    3
+17  6    1
+18  7   16
+19  9    2
+20  X    1
+```
