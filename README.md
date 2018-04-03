@@ -9,11 +9,13 @@ Task 2 goal is to create a browser-based JavaScript tool for interactive visuali
 1. Retrieve data from an API provided by the Data Coordination Center of the International Cancer Genomics Consortium (http://dcc.icgc.org)
 2. Should obtain mutation data for the Glioblastoma multiforme project (GBM-US) from the mutations API endpoint of the ICGC Data Coordination Center
 3. Retrieve: 
- * mutation ids, 
- * mutation details, 
- * the type of the mutation, 
- * chromosome and 
- * start and end position for 100 mutations of the GBM-US project. 
+ * mutation ids (1), 
+ * mutation details (2), 
+ * the type of the mutation (3), 
+ * chromosome (4) and 
+ * start and (5)
+ * end position (6)
+ for 100 mutations of the GBM-US project. 
  
  ## Two Visualizations
  The UI for the web browser should give information about:
@@ -25,29 +27,12 @@ Task 2 goal is to create a browser-based JavaScript tool for interactive visuali
  The dataset is in JSON file. The JSON file is extracted from this link https://dcc.icgc.org/api/v1/projects/GBM-US/mutations?field=id,mutation,type,chromosome,start,end&size=100&order=desc
  
  Here it is the example of the dataset:
-```
-0	
-id	"MU589117"
-type	"single base substitution"
-chromosome	"10"
-start	38654432
-end	38654432
-mutation	"A>G"
-study	[]
-1	
-id	"MU588573"
-type	"single base substitution"
-chromosome	"7"
-start	55221822
-end	55221822
-mutation	"C>T"
-study	[]
-2	
-id	"MU589341"
-type	"single base substitution"
-chromosome	"7"
-start	55233043
-end	55233043
-mutation	"G>T"
-study	[]
-```
+
+`1	
+id	"MU588573" --mutation ids (1)
+type	"single base substitution" --type of mutation (3)
+chromosome	"7" (4)
+start	55221822 (5)
+end	55221822 (6)
+mutation	"C>T" (2)
+study	[]`
