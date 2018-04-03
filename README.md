@@ -30,11 +30,11 @@ Task 2 goal is to create a browser-based JavaScript tool for interactive visuali
 
 ```
 1	
-id	"MU588573" --mutation ids (1)
-type	"single base substitution" --type of mutation (3)
-chromosome	"7" (4)
-start	55221822 (5)
-end	55221822 (6)
-mutation	"C>T" (2)
+id	"MU588573" --mutation ids 
+type	"single base substitution" --type of mutation 
+chromosome	"7" 
+start	55221822
+end	55221822 
+mutation	"C>T" 
 study	[]
 ```
