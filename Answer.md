@@ -52,7 +52,6 @@ g + geom_bar(aes(fill=chromosome))
 
 [logo]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "The Type of Mutation across Type of Chromosome"
 
-```
 
 ```
 > chromosomecount <- count(gnomeDF$chromosome)
