@@ -28,11 +28,13 @@ Task 2 goal is to create a browser-based JavaScript tool for interactive visuali
  
  Here it is the example of the dataset:
 
-`1	
+```
+1	
 id	"MU588573" --mutation ids (1)
 type	"single base substitution" --type of mutation (3)
 chromosome	"7" (4)
 start	55221822 (5)
 end	55221822 (6)
 mutation	"C>T" (2)
-study	[]`
+study	[]
+```
