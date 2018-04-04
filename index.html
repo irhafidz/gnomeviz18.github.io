@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-img {
-    width:100%;
-}
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
 
-<img src="https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg" alt="Type of Chromosome=" style="width:702px;height:700px;">
+    <title>Gnomevis Hafidz</title>
 
-</body>
-</html> 
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://dcc.icgc.org/api/v1/projects/GBM-US/mutations?field=id,mutation,type,chromosome,start,end&size=100&order=desc';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'text';
+    request.send();
+    request.onload = function() {
+      var hasil = request.response;
+      var datas = JSON.parse(hasil);
+      gnomedata= datas['hits'];
+     console.log(gnomedata.length);
+	for(var i = 0; i < gnomedata.length; i++) {
+	console.log(gnomedata[i].id); 
+	console.log(gnomedata[i].type);
+	console.log(gnomedata[i].chromosome);
+	console.log(gnomedata[i].start);
+	console.log(gnomedata[i].end);
+	}
+    }
+   
+    </script>
+  </body>
+</html>
