@@ -49,11 +49,13 @@ g + geom_bar(aes(fill=mutation_type))
 
 Creating 2nd visualization using ggplot2
 1. Count the type of each mutation
-2.
+2. Count the type of chromosome for each type of mutation
+3. Count each individual type of chromosome
+4. Count the type of mutation for each id mutation
 
 
 
-1. Counting the type of each mutation 
+1. Counting the type of each mutation
 ```
 # creating visualizations
 library(plotly)
@@ -66,7 +68,7 @@ g + geom_bar(aes(fill=chromosome))
 
 [chrom]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "Distribution of Mutation accross the Type of Chromosome"
 
-2. Counting each type of chromosome accross the type of mutation
+2. Counting the type of chromosome for each type of mutation
 
 ```
 > chromosomecount <- count(gnomeDF$chromosome)
@@ -103,7 +105,7 @@ gchromosome
 
 [chrom2]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/countChromosome.jpeg
 
-4. Counting the type of mutation accross the mutation id
+4. Count the type of mutation for each id mutation
 
 ```
 gmutation2 <- ggplot(gnomeDF, aes(mutation)) + geom_bar(aes(fill=id))
