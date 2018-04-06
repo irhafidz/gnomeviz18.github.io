@@ -90,4 +90,5 @@ Counting each individual type of chromosome
 ```
 gchromosome <- ggplot(gnomeDF, aes(chromosome)) + geom_bar(aes(fill=chromosome))
 ```
+![alt text][chrom2]
 [chrom2]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/countChromosome.jpeg
