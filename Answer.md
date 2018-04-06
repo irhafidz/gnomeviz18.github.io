@@ -112,4 +112,4 @@ gmutation2
 
 ![alt text][chrom3]
 
-[chrom3]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/countChromosome.jpeg
+[chrom3]: https://github.com/irhafidz/gnomeviz18.github.io/blob/9c570543c6e6a85b11ab9a3947d54545be4d7a27/Rplot02.jpeg
