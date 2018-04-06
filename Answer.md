@@ -60,9 +60,6 @@ g + geom_bar(aes(fill=chromosome))
 
 [chrom]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/TypeChromosome.jpeg "Distribution of Mutation accross the Type of Chromosome"
 
-
-
-
 ```
 > chromosomecount <- count(gnomeDF$chromosome)
 > chromosomecount
@@ -88,3 +85,9 @@ g + geom_bar(aes(fill=chromosome))
 19  9    2
 20  X    1
 ```
+Counting each individual type of chromosome
+
+```
+gchromosome <- ggplot(gnomeDF, aes(chromosome)) + geom_bar(aes(fill=chromosome))
+```
+[chrom2]: https://github.com/irhafidz/gnomeviz18.github.io/blob/master/countChromosome.jpeg
