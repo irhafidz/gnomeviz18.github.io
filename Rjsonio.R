@@ -38,6 +38,8 @@ str(gnomeDF)
 gnomeDF$mutation_type <- as.factor(gnomeDF$mutation_type)
 gnomeDF$mutation <- as.factor(gnomeDF$mutation)
 gnomeDF$chromosome <- as.factor(gnomeDF$chromosome)
+        
+write.csv(gnomeDF, file = "D://gnomeviz//gnomeDF.csv")
 
 # creating barplot
 library(ggplot2)
